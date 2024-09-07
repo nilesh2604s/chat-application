@@ -11,8 +11,7 @@ const app = express();
 const server = http.createServer(app);
 const io = socketio(server);
 
-app.use(cors({
-  origin: 'https://nilesh-chat.netlify.app/'
+app.use(cors({ '*'
 }));
 app.use(router);
 

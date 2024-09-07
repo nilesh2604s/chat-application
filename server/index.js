@@ -12,7 +12,7 @@ const server = http.createServer(app);
 const io = socketio(server);
 
 app.use(cors({
-  origin:https: 'https://nilesh-chat.netlify.app/'
+  origin: 'https://nilesh-chat.netlify.app/'
 }));
 app.use(router);
 
